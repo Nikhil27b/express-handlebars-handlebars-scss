@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+.domine-font {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+}
+
+.karla-font {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.section-heading {
+  color: #000;
+  font-size: 4vw;
+  margin-bottom: 2rem;
+  font-family: domine-font;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li,
+p,
+a {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #3D3C3C;
+}
+
+button {
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3D3C3C;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: #530C0C;
+}
+
+p {
+  transition: all 0.4s ease-in-out;
+}
+
+ul li {
+  transition: all 0.4s ease-in-out;
+  color: #3D3C3C;
+}
+
+section {
+  padding: 6rem 0;
+  overflow-y: visible;
+  position: relative;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #C65853;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}

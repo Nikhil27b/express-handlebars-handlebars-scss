@@ -1,0 +1,14 @@
+@import "./base/typography";
+@import "./base/base";
+@import "./abstract/mixins";
+@import "./abstract/variables";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

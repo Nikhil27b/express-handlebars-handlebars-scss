@@ -1,0 +1,50 @@
+@mixin transition {
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@mixin fitimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin itemcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexitem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background_img($image, $bg-clr) {
+  background-image: $image;
+  background-color: $bg-clr;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin theme-btn {
+  transition: all 0.8s ease-in-out;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin: 2rem 0rem 1rem 0rem;
+  position: relative;
+  font-size: 1.2rem;
+  color: $primary-clr;
+  border: 1px solid $primary-clr;
+  &:hover {
+    box-shadow: inset 0 0 0 2em #fff;
+  }
+}

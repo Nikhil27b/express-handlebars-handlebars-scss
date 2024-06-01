@@ -1,0 +1,22 @@
+{
+  "name": "express-hbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass-watch": "sass --no-source-map --watch src/styles/main.scss src/public/css/main.css",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "sass": "^1.77.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
