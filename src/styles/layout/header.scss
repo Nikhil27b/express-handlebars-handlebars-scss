@@ -1,0 +1,16 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.navbar {
+  @include flexitem;
+  @include spacing-main;
+  .nav-list {
+    display: flex;
+    .nav-items {
+      padding: 0 2rem;
+      a {
+        font-weight: 600;
+      }
+    }
+  }
+}

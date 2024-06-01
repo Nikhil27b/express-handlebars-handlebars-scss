@@ -1,0 +1,185 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../base/base";
+
+.home-banner {
+  background: url("/assets/images/headshape.png") no-repeat 100% 95%;
+  .home-flex {
+    @include flexitem;
+
+    .home-content {
+      width: 50%;
+
+      p {
+        @include common-paragraph-styles;
+        color: $primary-clr;
+        font-size: 12.5px;
+        text-align: justify;
+        width: 50%;
+      }
+
+      a {
+        @include theme-btn;
+        font-size: 21px;
+        font-family: "Karla", sans-serif;
+      }
+    }
+  }
+}
+
+.about {
+  .about-flex {
+    @include flex-container();
+
+    margin-top: -5px;
+
+    .about-content {
+      @include itemcenter;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 450px;
+      border-radius: 11px;
+      background-color: $primary-clr;
+      text-align: center;
+
+      .section-heading {
+        font-size: 105px;
+        color: $white;
+      }
+
+      p {
+        @include common-paragraph-styles;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        color: $white;
+      }
+
+      a {
+        color: $white;
+        font-size: 24.75px;
+      }
+    }
+  }
+}
+
+.smooth {
+  .smooth-flex {
+    @include flex-container();
+
+    .smooth-overlay {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(212, 207, 205, 0.74);
+      transform: translateY(-50%);
+      .content {
+        @include itemcenter;
+
+        h2 {
+          font-size: 72.94px;
+          line-height: 69px;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 2rem;
+          width: 90%;
+          text-transform: uppercase;
+          color: $primary-clr;
+          font-family: "Karla", sans-serif;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+.makehabit {
+  .makehabit-flex {
+    @include flex-container();
+
+    .makehabit-overlay {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background-color: rgba(212, 207, 205, 0.74);
+      transform: translateY(-50%);
+      .content {
+        text-align: center;
+        @include itemcenter;
+        h2 {
+          font-size: 133.88px;
+          text-align: center;
+          line-height: 127.4px;
+        }
+        a {
+          text-align: center;
+          @include theme-btn;
+          margin-top: 2rem;
+          font-size: 19px;
+          font-family: "Karla", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+.card-section {
+  background-color: $primary-clr;
+  padding: 4rem 0;
+  .card-flex {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .cardesay {
+      img {
+        width: 100px;
+      }
+      .section-heading {
+        color: $white;
+        line-height: 49.74px;
+        padding: 1rem 0;
+        font-size: 55.32px;
+      }
+      p {
+        font-size: 17px;
+        width: 70%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-family: "Karla", sans-serif;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.mission-section {
+  padding: 4rem 0;
+  .mission-flex {
+    @include flexitem;
+    justify-content: start;
+    img {
+      width: 400px;
+    }
+    .section-heading {
+      font-size: 120.51px;
+      margin: 0 6rem;
+      letter-spacing: 1px;
+      line-height: 111.95px;
+    }
+    p {
+      @include common-paragraph-styles;
+      font-size: 17.28px;
+      width: 35%;
+      color: $primary-clr;
+    }
+  }
+}

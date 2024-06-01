@@ -4,11 +4,14 @@
 @import "./abstract/variables";
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
-
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+@import "./layout/home.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  background-color: $bg-light;
+  overflow-x: hidden;
 }

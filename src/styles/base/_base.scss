@@ -10,10 +10,11 @@ h6 {
 }
 
 .section-heading {
-  color: $black;
-  font-size: 4vw;
-  margin-bottom: 2rem;
-  font-family: domine-font;
+  color: $primary-clr;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Domine", serif;
+
 }
 
 html {
@@ -24,7 +25,7 @@ p,
 a {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: $text-clr;
+  color: $white;
 }
 button {
   color: $black;
@@ -32,10 +33,13 @@ button {
 ul li {
   list-style: none;
 }
+img{
+  width: 100%;
+}
 
 a {
   text-decoration: none;
-  color: $text-clr;
+  color: $primary-clr;
   transition: all 0.4s ease-in-out;
 }
 a:hover {
@@ -52,12 +56,12 @@ ul {
 }
 
 section {
-  padding: 6rem 0;
   overflow-y: visible;
   position: relative;
 }
 .container-fluid {
   width: 90%;
+  margin: 0 auto;
 }
 
 body::-webkit-scrollbar-track {
