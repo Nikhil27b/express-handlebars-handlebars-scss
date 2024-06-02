@@ -11,10 +11,25 @@
 </head>
 
 <body>
+  
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <ul class="nav-list">
+        <li class="nav-items"><a href="">HOME</a></li>
+        <li class="nav-items"><a href="">SERVICES</a></li>
+        <li class="nav-items"><a href="">DENTISTS</a></li>
+        <li class="nav-items"><a href="">BLOG</a></li>
+        <li class="nav-items"><a href="">CONTACT</a></li>
+      </ul>
+  </div>
+</div>
   <header>
     <nav class="navbar">
       <div class="menu">
+        <a href="javascript:void(0)" onclick="openNav()">
         <img src="/assets/images/menu.png" alt="LOGO">
+        </a>
       </div>
       <ul class="nav-list">
         <li class="nav-items"><a href="">HOME</a></li>
@@ -30,3 +45,15 @@
       </div>
     </nav>
   </header>
+
+  
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     

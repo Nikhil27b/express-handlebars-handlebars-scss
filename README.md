@@ -3,7 +3,7 @@
 ## Description
 This is a Express project landing page using HBS.
 
-[Application Link]() - Hosted on Digital Ocean 
+[Application Link](https://shark-app-cdpwu.ondigitalocean.app/) - Hosted on Digital Ocean (Starter Plan)
 
 ## Table of Contents
 - [File Structure](#file-structure)
@@ -18,17 +18,13 @@ This is a Express project landing page using HBS.
 project-root/
 │
 ├── src/
-│   ├── components/
-│   ├── assets/
+│   ├── public/
 │   ├── pages/
-│   └── utils/
-│   └── services/
+│   ├── styles/
+│   └── app.js
 │
-└── other-files-and-folders/
+└── other-files
 
-Layout.jsx - Contain layout of application
-Pages.jsx - Contains all the pages list
-App.jsx - Contains the routes for application
 ```
 
 
@@ -61,16 +57,11 @@ Explain how to use the project after it's been installed. Include any commands o
 ## ProjectDetails
 
 This project contains multiple features list down below.
-- Get movies from 2012 to current year on scroll of user.
-- Search Movie option for application.
-- Movie list sorted descending order of popularity.
-- Movie Card Reusable componet with details.
-- Genre coming from API and search movie when select that from list.
-- Home Page Slider for Better UI (Extra).
-- Movie Detail Page with extra infromation (Extra).
-- Reponsive Web Application till Media 280px (Extra).
-- Error Page (Extra).
-- Used PropTypes NPM package for Extra type safety (Extra).
+- Full Landing Page.
+- Created using express.js and hanlebars.
+- Responsive Page.
+- Used Scss.
+- Reusable Components.
 
 
 ## Acknowledgements

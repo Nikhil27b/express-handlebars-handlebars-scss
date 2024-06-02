@@ -49,7 +49,8 @@
   color: $white;
   border: 1px solid $primary-clr;
   &:hover {
-    box-shadow: inset 0 0 0 2em #fff;
+    background-color: transparent;
+    color: $primary-clr;
   }
 }
 

@@ -43,7 +43,9 @@ a {
   transition: all 0.4s ease-in-out;
 }
 a:hover {
-  color: $secondary-clr;
+  background-color: transparent;
+  border: 1px solid $primary-clr;
+  color: $primary-clr
 }
 p {
   transition: all 0.4s ease-in-out;
