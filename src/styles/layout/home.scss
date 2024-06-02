@@ -66,6 +66,7 @@
 .smooth {
   .smooth-flex {
     @include flex-container;
+    margin-top: -5px;
 
     .smooth-overlay {
       position: absolute;

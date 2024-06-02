@@ -1,0 +1,53 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+footer {
+    background-color: $primary-clr;
+    margin-top: -6px;
+
+    .container-fluid {
+        padding: 2rem 0;
+
+        .footer-main {
+            @include flexitem;
+            @include spacing-main;
+        }
+
+        .footer-social {
+            display: grid;
+            gap: 50px 200px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .social-link {
+                font-family: "Karla", sans-serif;
+
+                h2 {
+                    font-size: 25px;
+                    color: $white;
+                    line-height: 44px;
+                }
+
+                p {
+                    font-size: 16.33px;
+
+                }
+            }
+        }
+
+        .footer-copy {
+            h2 {
+                font-size: 91px;
+                text-align: end;
+                font-family: "Domine", serif;
+                color: $white;
+                line-height: 86px;
+            }
+
+            p {
+                font-family: "Karla", sans-serif;
+                font-size: 15px;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

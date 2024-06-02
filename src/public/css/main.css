@@ -110,6 +110,50 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
+footer {
+  background-color: #5a66c5;
+  margin-top: -6px;
+}
+footer .container-fluid {
+  padding: 2rem 0;
+}
+footer .container-fluid .footer-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+footer .container-fluid .footer-social {
+  display: grid;
+  gap: 50px 200px;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .container-fluid .footer-social .social-link {
+  font-family: "Karla", sans-serif;
+}
+footer .container-fluid .footer-social .social-link h2 {
+  font-size: 25px;
+  color: #eee7e4;
+  line-height: 44px;
+}
+footer .container-fluid .footer-social .social-link p {
+  font-size: 16.33px;
+}
+footer .container-fluid .footer-copy h2 {
+  font-size: 91px;
+  text-align: end;
+  font-family: "Domine", serif;
+  color: #eee7e4;
+  line-height: 86px;
+}
+footer .container-fluid .footer-copy p {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -240,7 +284,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: -5px;
 }
 .about .about-flex img {
-  min-height: 100%;
+  min-height: 100vh;
   object-fit: cover;
 }
 .about .about-flex .about-content {
@@ -277,9 +321,10 @@ body::-webkit-scrollbar-thumb {
 .smooth .smooth-flex {
   min-height: 100vh;
   position: relative;
+  margin-top: -5px;
 }
 .smooth .smooth-flex img {
-  min-height: 100%;
+  min-height: 100vh;
   object-fit: cover;
 }
 .smooth .smooth-flex .smooth-overlay {
@@ -317,7 +362,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 .makehabit .makehabit-flex img {
-  min-height: 100%;
+  min-height: 100vh;
   object-fit: cover;
 }
 .makehabit .makehabit-flex .makehabit-overlay {
@@ -495,7 +540,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 .cta .cta-flex img {
-  min-height: 100%;
+  min-height: 100vh;
   object-fit: cover;
 }
 .cta .cta-flex .cta-content {
@@ -531,6 +576,411 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 0 2em #fff;
 }
 
+@media screen and (max-width: 1700px) {
+  .cta .cta-flex .cta-content {
+    width: 80%;
+  }
+  .team .team-flex img {
+    width: 360px;
+  }
+  .mission-section .mission-flex {
+    justify-content: space-between;
+  }
+  .mission-section .mission-flex img {
+    width: 300px;
+  }
+  .mission-section .mission-flex p {
+    width: 80%;
+    padding: 0 20px;
+  }
+  .mission-section .mission-flex .section-heading {
+    white-space: nowrap;
+    font-size: 90.51px;
+    line-height: 95px;
+    margin: 0 4rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .home-banner .home-flex .home-content {
+    width: 40%;
+  }
+  .home-banner .home-flex .home-content p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .counts .container-fluid .counts-title .section-heading {
+    font-size: 100.96px;
+    line-height: 98.25px;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading span {
+    font-size: 30.5px;
+    line-height: 30.85px;
+  }
+  .about .about-flex .about-content {
+    width: 80%;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  footer .container-fluid .footer-social {
+    gap: 50px 150px;
+  }
+  .cta .cta-flex .cta-content .section-heading {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .team .flex-title .section-heading {
+    font-size: 100px;
+    line-height: 105px;
+  }
+  .team .team-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 0;
+  }
+  .mission-section .mission-flex img {
+    width: 250px;
+  }
+  .makehabit .makehabit-flex .makehabit-overlay .content h2 {
+    font-size: 100.88px;
+    line-height: 100.4px;
+  }
+  .home-banner .home-flex .home-img img {
+    width: 80%;
+  }
+  .home-banner .home-flex .home-content {
+    width: 45%;
+  }
+  .home-banner .home-flex .home-content .section-heading {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  footer .container-fluid .footer-social {
+    gap: 50px 60px;
+  }
+  .mission-section .mission-flex {
+    flex-wrap: wrap;
+  }
+  .mission-section .mission-flex p {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .card-section .container-fluid .card-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 0;
+  }
+  .card-section .container-fluid .card-flex .cardesay p {
+    width: 90%;
+  }
+  .smooth .smooth-flex .smooth-overlay .content h2 {
+    font-size: 55.94px;
+    line-height: 55px;
+  }
+  .about .about-flex .about-content {
+    width: 90%;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 70px;
+  }
+  .about .about-flex .about-content p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .home-banner .home-flex {
+    flex-wrap: wrap;
+  }
+  .home-banner .home-flex .home-img {
+    width: 100%;
+  }
+  .home-banner .home-flex .home-img img {
+    width: 100%;
+  }
+  .home-banner .home-flex .home-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .home-banner .home-flex .home-content p {
+    width: 80%;
+  }
+  .container-fluid {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer .container-fluid .footer-main {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  footer .container-fluid .footer-main .footer-social .social-link.right {
+    text-align: right;
+  }
+  footer .container-fluid .footer-main .footer-copy p {
+    text-align: right;
+  }
+  .cta .cta-flex .cta-content {
+    width: 100%;
+  }
+  .counts .container-fluid .counts-title .section-heading {
+    font-size: 80.96px;
+    line-height: 88.25px;
+  }
+  .counts .container-fluid .counts-title .counts-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 0;
+  }
+  .team .flex-title .section-heading {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .team .team-flex img {
+    width: 300px;
+  }
+  .navbar .nav-list {
+    display: none;
+  }
+  .home-banner {
+    background: url(/assets/images/headshape.png) no-repeat 100% 98%;
+    background-size: 120px;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 55px;
+  }
+  .makehabit .makehabit-flex .makehabit-overlay .content h2 {
+    font-size: 76.88px;
+    line-height: 76.4px;
+  }
+  .card-section .card-flex .cardesay .section-heading {
+    color: #eee7e4;
+    line-height: 52.74px;
+    padding: 1rem 0;
+    font-size: 49.32px;
+  }
+  .mission-section .mission-flex .section-heading {
+    font-size: 85.51px;
+    line-height: 85px;
+  }
+  .counts {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 820px) {
+  .card-section .container-fluid .card-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-section .container-fluid .card-flex .cardesay p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .makehabit .makehabit-flex img {
+    object-position: left;
+  }
+  .makehabit .makehabit-flex .makehabit-overlay {
+    width: 100%;
+  }
+  .team .team-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team .team-flex img {
+    width: 100%;
+  }
+  .mission-section .mission-flex img {
+    width: 200px;
+  }
+  .mission-section .mission-flex .section-heading {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 0 1rem;
+  }
+  .counts .container-fluid {
+    background-size: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .smooth .smooth-flex .smooth-overlay {
+    width: 100%;
+  }
+  .home-banner {
+    background-size: 100px;
+  }
+  .home-banner .home-flex .home-content p {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .mission-section .mission-flex img {
+    margin-bottom: 20px;
+  }
+  footer .container-fluid .footer-main .footer-social {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 60px;
+  }
+  footer .container-fluid .footer-main .footer-social .social-link.right {
+    text-align: left;
+  }
+  .counts .container-fluid {
+    background-position: 0% 10%, 95% 98%;
+  }
+  .counts .container-fluid .counts-title .section-heading {
+    font-size: 60.96px;
+    line-height: 65.25px;
+  }
+  .counts .container-fluid .counts-title .counts-flex {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px 0;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading span {
+    font-size: 30.5px;
+    line-height: 35.85px;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 50px;
+  }
+  .cta .cta-flex .cta-content .section-heading {
+    font-size: 60px;
+    line-height: 85px;
+  }
+  .cta .cta-flex .cta-content .section-heading br {
+    display: none;
+  }
+  .cta .cta-flex .cta-content a {
+    font-size: 18px;
+  }
+  footer .container-fluid .footer-copy h2 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team .flex-title .section-heading {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .smooth .smooth-flex .smooth-overlay .content {
+    width: 90%;
+  }
+  .home-banner .home-flex .home-content .section-heading br {
+    display: none;
+  }
+  .card-section .card-flex .cardesay .section-heading br {
+    display: none;
+  }
+  .team .team-flex .section-heading {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home-banner .home-flex .home-content .section-heading {
+    font-size: 40px;
+  }
+  .home-banner .home-flex .home-content a {
+    font-size: 17px;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 44px;
+  }
+  .about .about-flex .about-content p {
+    font-size: 17px;
+  }
+  .about .about-flex .about-content a {
+    color: #eee7e4;
+    font-size: 21.75px;
+  }
+  .mission-section .mission-flex .section-heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .counts .container-fluid .counts-title .section-heading {
+    font-size: 50.96px;
+    line-height: 55.25px;
+  }
+  .counts .container-fluid .counts-flex .counts-card .section-heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .counts .container-fluid .counts-flex .counts-card .section-heading span {
+    font-size: 25.5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about .about-flex .about-content .section-heading {
+    font-size: 40px;
+  }
+  .smooth .smooth-flex .smooth-overlay .content h2 {
+    font-size: 45.94px;
+    line-height: 50px;
+  }
+  .makehabit .makehabit-flex .makehabit-overlay .content h2 {
+    font-size: 60.88px;
+    line-height: 65.4px;
+  }
+  .card-section .card-flex .cardesay .section-heading {
+    padding: 1rem 0;
+    font-size: 37.32px;
+  }
+  .cta .cta-flex .cta-content .section-heading {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  footer .container-fluid .footer-copy h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .home-banner {
+    background-size: 70px;
+  }
+  .home-banner .home-flex .home-content .section-heading {
+    font-size: 35px;
+  }
+  .about .about-flex .about-content .section-heading {
+    font-size: 40px;
+  }
+  .about .about-flex .about-content p {
+    font-size: 16px;
+  }
+  .card-section .card-flex .cardesay .section-heading {
+    padding: 1rem 0;
+    font-size: 33.32px;
+  }
+  .card-section .card-flex .cardesay p {
+    font-size: 15px;
+  }
+  .mission-section .mission-flex .section-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .team .flex-title .section-heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .counts .container-fluid .counts-title .section-heading {
+    font-size: 50.96px;
+    line-height: 55.25px;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .counts .container-fluid .counts-title .counts-flex .counts-card .section-heading span {
+    font-size: 25.5px;
+  }
+  footer .container-fluid .footer-copy h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
